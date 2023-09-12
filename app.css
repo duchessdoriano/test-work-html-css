@@ -1,0 +1,385 @@
+/* =========== GENERAL CLASSES ============ */
+
+
+* {
+    list-style: none;
+    line-height: 1.1;
+    color: black;
+    text-decoration: none;
+}
+
+:root {
+    --container-width-lg: 80%;
+    --container-width-md: 95%;
+    --transition: all 0.6 ease;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1006%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(50%2c 63%2c 41%2c 1)'%3e%3c/rect%3e%3cpath d='M610.98 621.76C738.6 612.69 800.95 381.1 1053.65 364.94 1306.35 348.78 1371.21 136.89 1496.32 129.74' stroke='rgba(170%2c 200%2c 97%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M635.89 626.77C797.52 593.42 866.17 178.49 1117.62 175.4 1369.06 172.31 1472.27 335.63 1599.34 337.8' stroke='rgba(170%2c 200%2c 97%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M857.77 654.26C990.89 634 1034.03 333.79 1276.67 315.72 1519.32 297.65 1583.79 161.46 1695.58 158.92' stroke='rgba(170%2c 200%2c 97%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M899.89 591.85C1001.83 542.95 953.85 216.01 1147.9 213.68 1341.95 211.35 1513.88 368.63 1643.92 370.48' stroke='rgba(170%2c 200%2c 97%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M609.28 633.63C710.33 611.72 680.63 347.59 907.52 347.05 1134.41 346.51 1351.14 480.62 1503.99 481.45' stroke='rgba(170%2c 200%2c 97%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1006'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+
+.container {
+    margin: 0 auto;
+    width: var(--container-width-lg);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* ======== GENERAL CLASSES ============ */
+
+
+/* ========= HEADER ========= */
+
+/* .header {
+    /* padding: 0.5rem;
+} */
+
+/* =====HEADER====== */
+
+/* ====== NAVBAR ======== */
+
+
+.nav {
+    width: 100%;
+    height: 2rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.nav-brand * {
+    color: rgb(236, 231, 180)
+}
+
+.nav-links>a {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.8s ease;
+}
+
+.nav-links * {
+    color: rgb(32, 46, 10);
+}
+
+.nav-links>a:hover {
+    color: rgb(236, 231, 180);
+    transform: scale(1.08);
+    text-decoration: underline;
+}
+
+.nav-brand:hover {
+    transform: scale(1.08);
+    color: black;
+}
+
+/* ========== HERO SECTION ========= */
+
+
+.hero-section {
+    padding-top: 2rem;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+    background: rgba(241, 230, 230, 0.185);
+    backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(7px);
+    border-top: 3rem;
+    border-radius: 0.3rem;
+}
+
+.hero-left>h3 {
+    color: rgb(245, 223, 149);
+    font-size: 1.5rem;
+}
+
+.hero-left>h1 {
+    color: grey;
+}
+
+.hero-left>h4 {
+    color: rgb(245, 223, 149);
+    margin-bottom: 3rem;
+}
+
+.hero-left>a {
+    padding: 0.5rem;
+    color: rgb(245, 223, 149);
+}
+
+.btn-hero {
+    padding: 3rem;
+    border: 1px;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background: rgb(172, 142, 46);
+}
+
+.hero-left>a:hover {
+    color: rgb(4, 71, 10);
+    transform: scale(1.08);
+}
+
+.hero-left>h1>span {
+    color: bisque;
+}
+
+.hero-right {
+    padding: 3rem 3rem 3rem 5rem;
+}
+
+.hero-right img {
+    width: 20rem;
+    height: 20rem;
+
+}
+
+.hero-left {
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-hero>span {
+    color: rgb(7, 53, 7);
+}
+
+/* ========== HERO SECTION ========= */
+
+/* ================ LEARN SECTION =============== */
+
+
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.learn-container:hover {
+    background: rgba(4, 36, 4, 0.644);
+}
+
+.learn-container {
+    background: url(img/img9285-394.jpg);
+    width: 13rem;
+    height: 13rem;
+    padding: 1rem;
+}
+
+.learn-container>a {
+    color: rgba(95, 189, 8, 0.705);
+}
+
+.learn-container:hover>a {
+    transform: scale(1.8s);
+    color: rgb(225, 247, 31);
+    text-decoration: underline;
+}
+
+.learn-btn {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    color: rgb(172, 142, 46);
+    background-color: rgb(52, 82, 4);
+}
+
+/* ========== LEARN SECTION ========= */
+
+/* ============= LOREM SECTION =========== */
+
+.lorem-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(128, 128, 128, 0.377);
+    backdrop-filter: blur(px);
+    -webkit-backdrop-filter: blur(7px);
+    padding: 2rem;
+}
+
+.lorem-left img {
+    height: 24rem;
+    width: 30rem;
+}
+
+.lorem-right {
+    padding-top: 2rem;
+    text-align: start;
+}
+
+
+.lorem-right>a {
+    background-color: rgb(247, 240, 152);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 6rem;
+}
+
+.lorem-right>a:hover {
+    transform: scale(1.8s);
+    color: rgb(238, 238, 114);
+}
+
+.lorem-right>h1 {
+    color: rgb(247, 240, 152);
+}
+
+.lorem-right>h1>span {
+    color: gray;
+}
+
+.lorem-right>h3 {
+    color: rgb(172, 142, 46);
+}
+
+.lorem-right>h4 {
+    color: rgb(172, 142, 46);
+    font-size: 1.09rem;
+}
+
+.lorem-btn:hover {
+    background: transparent;
+    border: 1px solid rgb(247, 240, 152);
+}
+
+/* ===== LOREM SECTION ====== */
+
+/* ============= LEARN SECTION ============= */
+
+.offer-heading {
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.offer-section {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(84%2c 95%2c 15%2c 1)'%3e%3c/rect%3e%3cpath d='M610.98 621.76C738.6 612.69 800.95 381.1 1053.65 364.94 1306.35 348.78 1371.21 136.89 1496.32 129.74' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M635.89 626.77C797.52 593.42 866.17 178.49 1117.62 175.4 1369.06 172.31 1472.27 335.63 1599.34 337.8' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M857.77 654.26C990.89 634 1034.03 333.79 1276.67 315.72 1519.32 297.65 1583.79 161.46 1695.58 158.92' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M899.89 591.85C1001.83 542.95 953.85 216.01 1147.9 213.68 1341.95 211.35 1513.88 368.63 1643.92 370.48' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M609.28 633.63C710.33 611.72 680.63 347.59 907.52 347.05 1134.41 346.51 1351.14 480.62 1503.99 481.45' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offer-card {
+    text-align: start;
+    padding: 2rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='450' height='360' preserveAspectRatio='none' viewBox='0 0 450 360'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1019%26quot%3b)' fill='none'%3e%3crect width='450' height='360' x='0' y='0' fill='rgba(27%2c 28%2c 29%2c 0.68)'%3e%3c/rect%3e%3cpath d='M55.86 421.67C98.31 417.37 125.55 326.56 197.46 326.37 269.36 326.18 268.25 371.37 339.05 371.37 409.85 371.37 443.51 326.91 480.65 326.37' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M198.54 419.1C246.76 371.2 211.86 170.41 294.62 164.77 377.37 159.13 433.77 252.58 486.77 254.77' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M225.25 421.75C285.28 388.08 263.77 214.37 365.01 184.57 466.26 154.77 464.71 108.06 504.78 105.37' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M107.97 430.38C150 423.9 172.15 323.48 239.95 323.06 307.76 322.64 305.94 368.06 371.94 368.06 437.93 368.06 469.06 323.67 503.92 323.06' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M85.65 364.14C171.53 332.86 191.07 78.4 310.62 75.95 430.16 73.5 471.25 197.76 535.58 201.95' stroke='rgba(241%2c 226%2c 2%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1019'%3e%3crect width='450' height='360' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur 2px;
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid beige;
+    box-shadow: 0 0 1rem black;
+}
+
+.offer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.offer-card >h2{
+    color: green;
+}
+
+.offer-card >p{
+    color: bisque;
+    margin-bottom: 2rem;
+}
+
+.offer-card >i{
+    font-size: 2rem;
+    color: green;
+}
+
+.offer-btn:hover{
+    color: green;
+    background: transparent;
+}
+.offer-btn{
+    border: 1px solid bisque;
+    background: gray;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+
+/* ============OFFER SECTION============== */
+
+/* =============PRODUCT SECTION================= */
+
+
+.product-container{
+    text-align: center;
+}
+
+.featured-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: rgba(128, 128, 128, 0.411);
+    background-size: cover;
+    padding: 2rem;
+    backdrop-filter: blur;
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.product img{
+    width: 100%;
+    border-top-right-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+/* .product{
+    width: 34rem;
+} */
+
+.chick{
+    border: 1px solid bisque;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    margin-top: -0.5rem;
+    text-align: start;
+    padding: 1rem;
+}
+.chick >a{
+    border: 1px solid transparent;
+    background: rgb(209, 183, 113);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+}
+
+.chick:hover{
+    
+}
+.chick >p{
+    padding: -0.5rem;
+}
+.chick *{
+    color: rgb(216, 196, 139);
+}
+
+.product-btn{
+    color: green;
+}
